@@ -10,7 +10,7 @@ function App() {
   const [message, setMessage] = useState('')
 
   const getData = (e, term) => {
-    setMessage("Loading...")
+    setMessage("Loading....")
     e.preventDefault()
     const apiUrl = `https://goodreads-server-express--dotdash.repl.co/search/${term}`;
     fetch(apiUrl)
